@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9e1e3673-4fcb-49c2-9258-a866a88c34b3}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6-32</InterpreterId>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="functional_tests\tests.py" />
+    <Compile Include="functional_tests\__init__.py" />
+    <Compile Include="lists\admin.py" />
+    <Compile Include="lists\apps.py" />
+    <Compile Include="lists\migrations\0001_initial.py" />
+    <Compile Include="lists\migrations\0002_item_text.py" />
+    <Compile Include="lists\migrations\0003_auto_20170626_1637.py" />
+    <Compile Include="lists\migrations\__init__.py" />
+    <Compile Include="lists\models.py" />
+    <Compile Include="lists\tests.py" />
+    <Compile Include="lists\urls.py" />
+    <Compile Include="lists\views.py" />
+    <Compile Include="lists\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="superlists\settings.py" />
+    <Compile Include="superlists\urls.py" />
+    <Compile Include="superlists\wsgi.py" />
+    <Compile Include="superlists\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lists\static\base.css" />
+    <Content Include="lists\static\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="lists\static\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="lists\static\bootstrap\css\bootstrap.css" />
+    <Content Include="lists\static\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lists\static\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lists\static\bootstrap\js\bootstrap.js" />
+    <Content Include="lists\static\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lists\static\bootstrap\js\npm.js" />
+    <Content Include="lists\templates\base.html" />
+    <Content Include="lists\templates\home.html" />
+    <Content Include="lists\templates\list.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="functional_tests" />
+    <Folder Include="lists" />
+    <Folder Include="lists\migrations" />
+    <Folder Include="lists\static" />
+    <Folder Include="lists\static\bootstrap\css" />
+    <Folder Include="lists\static\bootstrap\fonts" />
+    <Folder Include="lists\static\bootstrap\js" />
+    <Folder Include="lists\templates" />
+    <Folder Include="superlists" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6-32" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+</Project>
